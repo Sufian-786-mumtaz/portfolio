@@ -47,6 +47,9 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
     color: white;
     transform: translateY(-5px);
 }
+.icon1_align{
+    padding-right: 40px;
+}
 .sec1_btn:hover{
     background-color: #fd4766;
     border: none;
@@ -83,16 +86,32 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
     100% {border-bottom: 3px solid #fd4766;
         width: 100%;}
   }
+  .nav_items:hover{
+    border-bottom: 3px solid #fd4766;
+  }
 .nav_items:hover{
     color: #fd4766 !important;
-    animation: example 0.9s linear 0.3s;
+    animation: example 0.6s ease;
 }
 .active{
     color: #fd4766 !important;
     border-bottom: 3px solid #fd4766;
 }
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2000;
+    transition: 0.3s;
+}
+.navbar-fixed-top.scrolled {
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    background-color: #091020 !important;
+    transition: background-color 200ms linear;
+  }
 .inner_text{
-    padding-top: 76px;
+    padding-top: 160px;
 }
 .inner_text{
     color:rgba(198, 201, 216, 0.75);
@@ -603,9 +622,12 @@ a:link{
         padding: 10px;
     }
 /* -----media quwries----- */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     .navbar-toggler-icon{
         background-color: white;
+    }
+    .navbar-fixed-top.scrolled{
+        background-color:#091020;
     }
   }
 @media only screen and (max-width: 767px) {
