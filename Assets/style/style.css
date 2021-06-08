@@ -546,11 +546,10 @@ a:link{
         margin-bottom: 50px;
     }
     .im_address, .im_address>a{
-        color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 700;
     font-size: 17px;
     display: inline-block;
-    margin-left: 18px;
     transition: 0.3s;
     }
     .contact_form input, .contact_form textarea{
@@ -651,3 +650,19 @@ a:link{
         border: none !important;
     }
   }
+   @media only screen and (max-width: 353px) {
+       .main_heading{
+           font-size: 40px;
+       }
+       .sp_text{
+           font-size: 40px;
+       }
+   }
+   @media only screen and (max-width: 280px) {
+    .main_heading{
+        font-size: 30px;
+    }
+    .sp_text{
+        font-size: 30px;
+    }
+}
