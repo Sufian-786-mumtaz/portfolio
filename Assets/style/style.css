@@ -62,43 +62,38 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
     transition: all 0.3s;
     margin-right: 15px;
 }
-@keyframes example {
-    0%   {border-bottom: 3px solid #fd4766;
-    width: 0%;}
-    10%   {border-bottom: 3px solid #fd4766;
-    width: 10%;}
-    20%   {border-bottom: 3px solid #fd4766;
-        width: 20%;}
-    30%  {border-bottom: 3px solid #fd4766;
-        width: 30%;}
-    40%  {border-bottom: 3px solid #fd4766;
-        width: 40%;}
-    50%  {border-bottom: 3px solid #fd4766;
-        width: 50%;}
-    60% {border-bottom: 3px solid #fd4766;
-        width: 60%;}
-    70% {border-bottom: 3px solid #fd4766;
-        width: 70%;}
-    80% {border-bottom: 3px solid #fd4766;
-         width: 80%;}
-    90% {border-bottom: 3px solid #fd4766;
-        width: 90%;}
-    100% {border-bottom: 3px solid #fd4766;
-        width: 100%;}
-  }
-  .nav_items:hover{
-    border-bottom: 3px solid #fd4766;
-  }
 .nav_items:hover{
     color: #fd4766 !important;
     animation: example 0.6s ease;
 }
-.active{
-    color: #fd4766 !important;
-    border-bottom: 3px solid #fd4766;
+.nav-link{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.icon1_align .nav-link:after{
+    width: 0!important;
+    height: 0!important;
+}
+.nav-link:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color:#fd4766 ;
+    bottom: 0;
+    left: 0;
+    transition: .4s all ease;
+}
+.nav-link:hover:after{
+    width: 100%;
+}
+.nav-link.active:after{
+    width: 100%;
 }
 .navbar{
     position: fixed;
+    overflow: hidden;
     top: 0;
     right: 0;
     width: 100%;
@@ -599,35 +594,36 @@ a:link{
         padding: 10px;
     }
     .icon2_anchor{
-    width: 50px;
-    height: 50px;
-    line-height: 47px;
-    font-size: 16px;
-    }
-    .icon2_style{
         color: rgba(198, 201, 216, 0.75);
-        padding: 10px;
-        font-size: 25px;
+        font-size: 20px;
         border: 2px solid rgba(198, 201, 216, 0.75);
-        border-radius: 100%;
+        border-radius: 50%;
+        display: inline-block;
+        height: 45px;
+        width: 45px;
+        line-height: 42px;
         text-align: center;
-        transition: transform 0.6s ease;
+        transition:  0.6s all ease;
     }
-    .icon2_style:hover{
-        border: none;
+    .icon2_anchor:hover{
+        border-color: #fd4766;
         background-color:#FD4766;
-        transform: translateY(-2px);
+        color: #fff;
     }
     .list-item{
         padding: 10px;
+    }
+    .toggle-icon{
+        color: #fff;
     }
 /* -----media quwries----- */
 @media only screen and (max-width: 991px) {
     .navbar-toggler-icon{
         background-color: white;
     }
-    .navbar-fixed-top.scrolled{
+    .navbar-collapse{
         background-color:#091020;
+        text-align: center;
     }
   }
 @media only screen and (max-width: 767px) {
