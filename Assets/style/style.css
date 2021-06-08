@@ -178,8 +178,8 @@ a:link{
 .sec2_para{
     color: rgba(198, 201, 216, 0.75);
     font-weight: 300;
-    line-height: 30px;
-    font-size: 18px;
+    line-height: 40px;
+    font-size: 2vw;
 }
 .tab-pane{
     border-bottom:none;
@@ -623,6 +623,18 @@ a:link{
     .navbar-collapse{
         background-color:#091020;
         text-align: center;
+    }
+    .section_title{
+        padding-top: 15px;
+    }
+    .sec_bg_color{
+        padding:80px 0px;
+    }
+    .set_coloumn{
+        flex-direction: column-reverse;
+    }
+    .icon1_align{
+        display: none;
     }
   }
 @media only screen and (max-width: 767px) {
