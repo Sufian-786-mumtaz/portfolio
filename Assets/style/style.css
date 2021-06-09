@@ -680,4 +680,7 @@ a:link{
     .sp_text{
         font-size: 30px;
     }
+    .sec2_para{
+        font-size: 10px;
+    }
 }
