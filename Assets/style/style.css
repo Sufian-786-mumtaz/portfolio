@@ -18,7 +18,7 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
     margin: 0px;
 }
 :root{
-    --primary:#fff;
+    --primary:#15044a;
     --secondary:#F8BB59;
     --bg-white:#fff7fa;
 }
@@ -49,14 +49,13 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
     transition: all 0.4s;
 }
 .icon_style:hover{
-    color: #15044a;
     transform: translateY(-5px);
 }
 .icon1_align{
     padding-right: 40px;
 }
 .sec1_btn:hover{
-    background-color: #15044a;
+    background-color: var(--primary);
     border: none;
 }
 
@@ -68,7 +67,7 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
     margin-right: 15px;
 }
 .nav_items:hover{
-    color: #15044a !important;
+    color: var(--primary) !important;
     animation: example 0.6s ease;
 }
 .nav-link{
@@ -85,7 +84,7 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
     position: absolute;
     height: 3px;
     width: 0%;
-    background-color:#15044a ;
+    background-color:var(--primary) ;
     bottom: 0;
     left: 0;
     transition: .4s all ease;
@@ -130,7 +129,7 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
 .sp_text{
     text-transform: capitalize;
     font-weight: bolder;
-    color: #15044a;
+    color: var(--primary);
     font-size: 53px;
 }
 a:link{
@@ -148,7 +147,7 @@ a:link{
 }
 .sec1_btn2:hover{
     color: white;
-    background-color: #15044a;
+    background-color: var(--primary);
     border: none;
 }
 
@@ -165,7 +164,7 @@ a:link{
     font-size: 16px;
     border-radius: 4px;
     margin-bottom: 12px;
-    background:linear-gradient(120deg, #131d25 20.69%, #1d0a52 50.19%, #491921 79.69%);
+    background:linear-gradient(120deg, #131d25 20.69%, var(--primary) 50.19%, #491921 79.69%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -173,7 +172,7 @@ a:link{
 .heading_2{
     font-size: 50px;
     font-weight: 600;
-    color: white;
+    color: var(--primary) !important;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
@@ -207,7 +206,7 @@ a:link{
     color: black;
 }
 .list-group-item.active{
-    background-color:#15044a !important;
+    background-color:var(--primary) !important;
     color: white !important;
     border: none;
 }
@@ -215,7 +214,7 @@ a:link{
     padding-top: 20px;
 }
 .progress_heading{
-    color: #15044a;
+    color: var(--primary);
     font-weight: 500;
     line-height: 50px;
     font-size: 18px;
@@ -231,7 +230,7 @@ a:link{
     75% {width: 75%;}
 }
 .progress-bar{
-    background:linear-gradient(120deg, #131f29 10.69%, #2f244d 30.19%, #15044a 79.69%);
+    background:linear-gradient(120deg, #131f29 10.69%, #2f244d 30.19%, var(--primary) 79.69%);
     animation: progress-bar1 0.75s linear 0.1s;
 }
 @keyframes progress-bar2 {
@@ -305,7 +304,7 @@ a:link{
     padding-bottom: 50px;
 }
 .col_style{
-    background: #F8BB59;
+    background: var(--secondary);
     padding: 40px 30px;
     cursor: pointer;
     transition: transform 0.6s ease;
@@ -323,7 +322,7 @@ a:link{
     display: flex;
 }
 .svgcolor1{
-    color:rgba(24, 14, 14, 0.178);
+    color:rgba(255, 0, 0, 0.513);
 }
 .svgcolor3{
     color: #0F8D98;
@@ -375,7 +374,7 @@ a:link{
     display: block;
     z-index: 1;
     content: '';
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0),#15044a 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--secondary) 100%);
     transition: opacity 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
     cursor: pointer;
     opacity: 0;
@@ -491,14 +490,14 @@ a:link{
     font-weight: 500;
     transition: all .4s ease-in-out;
     background-size: 152% 100%;
-    background: #15044a;
-    border: 2px solid #15044a;
+    background: var(--primary);
+    border: 2px solid var(--primary);
 }
 .btn3:hover{
     transition: all .4s ease-in-out;
     background: transparent;
-    border-color: #15044a;
-    color: #15044a !important;
+    border-color: var(--primary);
+    color: var(--primary) !important;
     }
 
     .rn-btn{
@@ -506,17 +505,17 @@ a:link{
         color: white;
     }
     .blog_hover .rn-btn:hover{
-        border: 2px solid #15044a;
+        border: 2px solid var(--primary);
         transform: translateY(-3px);
         color: #ffffff;
-        background: #15044a !important;
+        background: var(--primary) !important;
 }
     .btn-opacity{
         padding: 0 23px;
         height: 40px;
         display: inline-block;
         line-height: 34px;
-        border: 2px solid #15044a;
+        border: 2px solid var(--primary);
         border-radius: 4px;
         font-size: 14px;
         position: relative;
@@ -612,8 +611,8 @@ a:link{
         color: black;
     }
     .icon2_anchor:hover{
-        border-color: #15044a;
-        background-color:#15044a;
+        border-color: var(--primary);
+        background-color:var(--primary);
         color: #fff;
     }
     .list-item{
