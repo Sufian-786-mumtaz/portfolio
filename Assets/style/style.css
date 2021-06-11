@@ -21,7 +21,8 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
     background-image: url(../Images/hero\ img.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-origin: content-box, padding-box;
     background-attachment: fixed;
     padding-bottom: 150px;
 }
@@ -196,7 +197,7 @@ a:link{
 }
 .list_style:hover{
     background-color:transparent;
-    color: white;
+    color: black;
 }
 .list-group-item{
     color: black;
@@ -570,7 +571,7 @@ a:link{
     background-color: transparent;
     }
     .footer_style{
-        background: #f8bb59e7;
+        background: #f8bb5998;
         padding: 30px 30px;
     }
     .f_logo{
@@ -628,13 +629,16 @@ a:link{
         color: white !important;    
         text-align: center !important ;
     }
+    .contact_img{
+        border-radius: 10px;
+    }
 /* -----media quwries----- */
 @media only screen and (max-width: 991px) {
     .navbar-toggler-icon{
         background-color: white;
     }
     .navbar-collapse{
-        background-color:#091020;
+        background-color:#f8bb59e7;
         text-align: center;
     }
     .section_title{
