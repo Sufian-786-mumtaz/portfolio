@@ -150,7 +150,7 @@ a:link{
 .sec1_btn2:hover{
     color: white;
     background-color: var(--primary);
-    border: none;
+    border: 1px solid #000022;
 }
 .main_img{
     border: 6px solid #057eff;
@@ -158,6 +158,9 @@ a:link{
 }
 .main_img>img{
     border-radius:12px;
+}
+.hd_clr{
+    color: #dc3545;
 }
 
 /* ---section-2-About---- */
@@ -173,7 +176,7 @@ a:link{
     font-size: 16px;
     border-radius: 4px;
     margin-bottom: 12px;
-    background:linear-gradient(120deg, #1095ff 10.69%, var(--primary) 100.19%, #e62173 39.69%);
+    background:linear-gradient(120deg, #dc3545 10.69%, #dc3545 100.19%, #e62173 39.69%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -208,8 +211,9 @@ a:link{
     border-radius: 70px;
 }
 .list_style:hover{
-    background-color:transparent;
-    color: #057eff;;
+    background-color:#057eff !important;
+    color: #057eff;
+   
 }
 .list-group-item{
     color: white;
@@ -315,7 +319,7 @@ a:link{
     background: #3148D2;
     padding: 40px 30px;
     cursor: pointer;
-    transition: transform 0.6s ease;
+    transition: all 0.5s ease;
 }
 .col_style:hover{
     box-shadow: 0px 2px 70px 0px rgb(253 71 102 / 5%);
@@ -583,7 +587,7 @@ a:link{
     background-color: transparent;
     }
     .footer_style{
-        background:#131313de;
+        background:#131313f7;
         padding: 30px 30px;
     }
     .f_logo{
