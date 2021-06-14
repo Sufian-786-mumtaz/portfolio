@@ -658,6 +658,7 @@ a:link{
     .navbar-collapse{
         background-color:#1d2124;
         text-align: center;
+        padding-left: 0px !important;
     }
     .section_title{
         padding-top: 15px;
