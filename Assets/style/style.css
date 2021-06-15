@@ -137,12 +137,17 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
 a:link{
     text-decoration: none;
 }
+.mb--45{
+    margin-bottom: 45px;
+   
+}
 .sec1_btn2{
     color:white;
     border: 1px solid #646b7a;
     background-color: transparent;
     text-transform: uppercase;
     padding: 16px 40px 16px 40px;
+    margin-left: 10px;
     font-size: 16px;
     border-radius: 70px;
     transition: background-color 0.6s ease;
