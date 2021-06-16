@@ -44,14 +44,24 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
 }
 .icon_style{
     color: white;
-    width: 24px;
-    height: 23px;
-    font-size: 24px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid white;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    line-height: 18px;
+    font-size: 20px;
     transition: all 0.4s;
+}
+.i_style{
+    color: white;
+    font-size: 17px;
 }
 .icon_style:hover{
     transform: translateY(-5px);
-    color: var(--primary);
+    background-color: var(--primary);
+    border-color: var(--primary)
 }
 .icon1_align{
     padding-right: 40px;
@@ -60,7 +70,9 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
     background-color: var(--primary);
     border: none;
 }
-
+.nav-item{
+    padding-left: 15px;
+}
 .nav_items{
     color: white !important;
     font-size: 16px;
@@ -87,7 +99,7 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
     height: 3px;
     width: 0%;
     background-color:var(--primary) ;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
     transition: .4s all ease;
 }
@@ -323,6 +335,7 @@ a:link{
     background: #3148D2;
     padding: 40px 30px;
     cursor: pointer;
+    border-radius: 14px;
     transition: all 0.5s ease;
 }
 .col_style:hover{
