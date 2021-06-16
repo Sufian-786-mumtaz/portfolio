@@ -124,6 +124,7 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
     transition: background-color 200ms linear;
   }
 .inner_text{
+    position: relative;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: bolder;
@@ -136,9 +137,22 @@ P,h1,h2,h3,h4,h5,h6,ul,li{
 .main_heading{
     font-weight: 800;
     text-transform: capitalize;
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 53px;
     line-height: 70px;
     color: white;
+    animation: typing 9s steps(16) infinite alternate;
+    border-right: 3px solid white;
+}
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 17ch;
+    }
 }
 .sp_text{
     text-transform: capitalize;
@@ -151,6 +165,12 @@ a:link{
 }
 .mb--45{
     margin-bottom: 50px;
+    font-weight: 800;
+    text-transform: capitalize;
+    background: transparent;
+    font-size: 53px;
+    line-height: 70px;
+    color: white;
 }
 .sec1_btn2{
     color:white;
@@ -247,6 +267,9 @@ a:link{
     font-weight: 500;
     line-height: 50px;
     font-size: 18px;
+}
+.award_list span:nth-child(1){
+    color: var(--primary);
 }
 @keyframes progress-bar1 {
     0% {width: 0%;};
@@ -688,12 +711,23 @@ a:link{
     }
     .icon1_align{
         display: none;
-    }
   }
 
 @media only screen and (max-width: 767px) {
     .center{
       justify-content: center;
+    }
+  }
+  @media only screen and (max-width: 686px) {
+    .center{
+      justify-content: center;
+    }
+    .main_heading{
+        animation: none;
+        width: 100%;
+        border: none;
+        white-space: normal;
+    } 
     }
   }
   @media only screen and (max-width: 575px) {
