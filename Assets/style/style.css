@@ -717,6 +717,19 @@ a:link{
     .center{
       justify-content: center;
     }
+    .text p{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .list_2{
+        padding-top: 10px;
+    }
+    .section_title{
+        margin-bottom: 0px;
+    }
+    .sec2_bg_color{
+        padding-bottom: 60px;
+    }
   }
   @media only screen and (max-width: 686px) {
     .center{
